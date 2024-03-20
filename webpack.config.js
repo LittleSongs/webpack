@@ -9,6 +9,13 @@ module.exports={
   module:{
     rules:[
       //loader配置
+      {
+        test:/\.css$/,
+        use:[
+          "style-loader",
+          "css-loader"
+        ]
+      }
     ]
   },
   plugins:[
